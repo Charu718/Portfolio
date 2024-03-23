@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .totalGallery {
+      height: 100%;
+      width: 90%;
+      margin-left: 10%;
+      position: relative;
+    }
+
+    .gImag1 {
+      background-image: url("images/findimg/Cyberhub_767.jpg");
+      background-size: 100% 100%;
+      font-size: 5em;
+      font-weight: bolder;
+      color: white;
+      padding-top: 20%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gImag2 {
+      background-image: url("images/findimg/indiranagar.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag3 {
+      background-image: url("images/findimg/DSC01598_767.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag4 {
+      background-image: url("images/findimg/AGL09179_767.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag5 {
+      background-image: url("images/findimg/MOI_Web.png");
+      background-size: 100% 100%;
+    }
+
+    .gImag6 {
+      background-image: url("images/findimg/Kamala-Nagar_Dehli_767.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag7 {
+      background-image: url("images/findimg/Taco-Bell-Logix1175_767.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag8 {
+      background-image: url("images/findimg/Phoenix-Marketcity_-Bangaluru.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag9 {
+      background-image: url("images/findimg/Ardee_TB_4.jpg");
+      background-size: 100% 100%;
+    }
+
+    .gImag10 {
+      background-image: url("images/findimg/Tacobell_VR_Mall_-Mohali_3_767.jpg");
+      background-size: 100% 100%;
+    }
+    #marq1{
+      width:63%;
+      margin-left:37%;
+    }
+    #marq2{
+      width:65%;
+    }
+    .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    .text {
+/* background: linear-gradient(to bottom, #2c3e50, #bdc3c7); */
+  opacity: 1;
+  color: white;
+  font-size: 7em;
+  padding: 16px 32px;
+      background-color:  #000000a3;
+}
+    .totalGallery:hover{
+      opacity:0.7;
+    }
+    .totalGallery:hover .middle{
+      opacity:1;
+    }
+    /*mobile view  */
+    @media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+      .totalGallery{
+        width:189%;
+      height:50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section class="totalGallery gImag1">
+      <marquee behavior="slide" direction="left" id="marq1">GALLERY</marquee>
+      <marquee behavior="slide" direction="right" id="marq2">OUR OUTLETS</marquee>
+    </section>
+    <section class="totalGallery gImag2">
+      <div class="middle">
+    <p class="text">INDIRA NAGAR, BANGLORE</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag3">
+      <div class="middle">
+    <p class="text">SECTOR-35C, CHANDIGARH</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag4">
+      <div class="middle">
+    <p class="text">AMBIENCE MALL, GURUGRAM</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag5">
+      <div class="middle">
+    <p class="text">MALL OF INDIA, NOIDA</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag6">
+      <div class="middle">
+    <p class="text">KAMLA NAGAR, DELHI</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag7">
+      <div class="middle">
+    <p class="text">LOGIX MALL, NOIDA</p>
+    </section>
+    <section class="totalGallery gImag8">
+      <div class="middle">
+    <p class="text">PHOENIX MARKET CITY MALL, BANGLORE</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag9">
+      <div class="middle">
+    <p class="text">ARDEE MALL, GURUGRAM</p>
+  </div>
+    </section>
+    <section class="totalGallery gImag10">
+      <div class="middle">
+    <p class="text">VR MOHALI, PUNJAB</p>
+  </div>
+    </section>
+</body>
+
+</html>

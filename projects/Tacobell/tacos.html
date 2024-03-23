@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    #add{
+      height: 80%;
+      width: 90%;
+      margin-left:10%;
+      background-image:url("images/hoverImage1.jpg");
+      background-size: 100% 100%;
+    }
+    .tacoMenu{
+      height: 50%;
+      width: 22%;
+      text-align: center;
+      border-radius: 5%;
+      line-height:40px;
+    }
+   .tacoList{
+     height: 100%;
+      width: 90%;
+      margin-left:10%;
+     display:flex;
+      flex-wrap: wrap;
+     gap:3%;
+     justify-content: center;
+   }
+    .tacoMenu:hover{
+      transform: scale(1.01);
+  box-shadow: 0px 0px 15px 4px grey;
+  transition: 1s;
+    }
+    .sizeTaco{
+       height: 70%;
+      width: 100%;
+      margin-bottom:5%;
+      border-radius: 5%;
+    }
+    .veg{
+      color: green;
+    }
+    .nonveg{
+      color: red;
+    }
+    .remove{
+      color: black;
+      text-decoration: none;
+    }
+    /*mobile view  */
+@media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+  .tacoMenu{
+    width:48%;
+    line-height: 20px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+          
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section id="add">
+    </section>
+    <p style="text-align: center; font-size:3em; font-weight:bolder;">TACOS</p>
+    <section class="tacoList">
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380__soft_pulled_chicken_taco.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>NAKED VEGGIE TACO & PEPSI BLACK</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380__tuct_n-veg_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>NAKED VEGGIE TACO & PEPSI BLACK</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380__tuct_veg.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>NAKED VEGGIE TACO MEAL</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_chalupa_n-veg.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>NAKED CHICKEN TACO & PEPSI BLACK</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_chalupa_veg.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>NAKED CHICKEN TACO MEAL</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_crunchy_mexican_chicken_taco.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CRUNCHY TACO</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_crunchy_mexican_paneer_taco.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CRUNCHY TACO</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_soft_mexican_paneer_taco_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>SOFT TACO</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_chalupa_meal_n-veg_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>SOFT TACO</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_chalupa_meal_veg_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CHEESE STUFT TACO</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_nct_meal_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CHEESE STUFT TACO MEAL</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_nvt_meal_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CHEESE STUFT TACO MEAL</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_uct_meal_n-veg_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CHEESE STUFT TACO MEAL</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_uct_meal_veg_1.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CRISPY CHALUPA TACO</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_wo_sides__nct_meal.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CRISPY CHALUPA TACO MEAL</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="tacos/tacosImg/367x380_website_internal_product_image_wo_sides__nvt_meal_3.jpg" class="sizeTaco">
+        <a href="finalorder.html" class="remove"><p>CRISPY CHALUPA TACO MEAL</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+    </section>
+        </div>
+      </div>
+    </section>
+  </div>
+  </body>
+</html>

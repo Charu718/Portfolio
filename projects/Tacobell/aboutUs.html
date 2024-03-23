@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+     #banner {
+      height: 50%;
+      width: 90%;
+      margin-left: 10%;
+      background-image: url("aboutus-image/aboutus-main.png");
+      background-size: 100% 100%;
+      padding-top: 8%;
+      line-height: 60px;
+    }
+
+    .bannerinner {
+      height: 40%;
+      width: 100%;
+      /* margin-top: 8%; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+     #find {
+      color: white;
+      font-size: 2em;
+      font-weight: bolder;
+    }
+    #ab-us{
+      height: 410%;
+      width: 90%;
+      margin-left:10%;
+      background-color: #F7F7F7;
+      display: flex;
+    }
+    #journey{
+      font-size:2em;
+      font-weight:bold;
+      margin-left:15%;
+      background-color: #F7F7F7;
+      padding: bottom 5%;;
+    }
+    #left,#right{
+      height: 100%;
+      width: 50%;
+      text-align:center;
+    }
+    #left{
+      border-right:2px solid grey;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+    }
+    #right{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+    }
+    .photo{
+      margin-top: 55%;
+    }
+    .photoSize{
+      height: 10%;
+      width: 80%;
+    }
+    .rightgap{
+      margin-top:50%;
+    }
+    .y1962{
+    margin-top: -19%;
+    margin-bottom: 15%;
+    background-color: black;
+    margin-left: 100%;
+    color: white;
+          font-weight: bolder;
+    font-size: 2em;
+    }
+    .rightYear{
+    margin-top: -16%;
+    margin-bottom: 15%;
+    background-color: black;
+    margin-right: 200%;
+    color: white;
+    }
+    .paraMargin{
+      width: 70%;
+    }
+    .photoSize:hover{
+      border:15px double black;
+    }
+    /*mobile view  */
+    @media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+      .photo{
+      margin-top: 281%;
+    }
+      #find{
+        text-align: center;
+        margin-top: 18%;
+      }
+       #query {
+        display: none;
+      }
+      .photoSize{
+        height: 4%;
+      }
+      #left, #right{
+            padding: 0% 5% 0% 5%;
+      }
+      .rightgap{
+      margin-top:460%;
+    }
+      #ab-us{
+        margin-bottom:7%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+          
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section id="banner">
+      <div class="bannerinner">
+        <img src="notexticon.png" id="query">
+        <p id="find">THE TACO BELL JOURNEY</p>
+      </div>
+    </section>
+    <p id="journey">Our History</p>
+    <section id="ab-us">
+      <div id="left">
+        <img src="aboutus-image/1954.jpg" class="photoSize">
+        <p class="y1962">1962</p>
+        <p class="paraMargin">Glen Bell was born on 3rd September 1923. After graduation he served in the U.S. Marine Corps as a cook during the World War-II. He started with the idea of selling crispy-shell tacos from the window of his hamburger stand which really got popular and became the foundation of Taco Bell.</p>
+         <img src="aboutus-image/1970.jpg" class="photo photoSize">
+        <p class="y1962">1970</p>
+        <p class="paraMargin">Taco Bell goes public with a total of 325 restaurants.</p>
+         <img src="aboutus-image/2015.png" class="photo photoSize">
+        <p class="y1962">2015</p>
+        <p class="paraMargin">Burman Hospitality becomes Taco Bells first franchisee in India</p>
+         <img src="aboutus-image/2019.jpg" class="photo photoSize">
+        <p class="y1962">2019</p>
+        <p class="paraMargin">Taco Bell names Burman Hospitality as master franchise partner</p>
+         <img src="aboutus-image/2022.jpeg" class="photo photoSize">
+        <p class="y1962">2022</p>
+        <p class="paraMargin">Burman Hospitality launches 100th Taco Bell restaurant at M3M, IFC, Sector-66, Gurugram.</p>
+      </div>
+      <div id="right">
+        <img src="aboutus-image/1962.jpg" class="photoSize rightgap">
+        <p class="paraMargin">Glen Bell opens his first Taco Bell restaurant in Downey, CA, serving what his customers called "Tay-Kohs."</p>
+         <img src="aboutus-image/2010.jpg" class="photo photoSize">
+        <p class="y1962 rightYear">2010</p>
+        <p class="paraMargin">Taco Bell opens its first restaurant in India</p>
+         <img src="aboutus-image/20151.jpg" class="photo photoSize">
+        <p class="paraMargin">Burman Hospitality opens first Taco Bell restaurant in Delhi</p>
+         <img src="aboutus-image/20191.jpg" class="photo photoSize">
+        <p class="paraMargin">Burman Hospitality launches 50th Taco Bell restaurant at Mantri Square Mall, Bangalore</p>
+      </div>
+      
+    </section>
+    <footer>
+      <ul class="footermenuList">
+        <li class="footerMenu"><a href="index.html" class="white">Our food</a></li>
+        <li class="footerMenu"><a href="findUs.html" class="white">Find us</a></li>
+        <li class="footerMenu"><a href="workwithus.html" class="white">Work with us</a></li>
+        <li class="footerMenu"><a href="aboutUs.html" class="white">About us</a></li>
+        <li class="footerMenu"><a href="whatsNew.html" class="white">What's new</a></li>
+      </ul>
+      <div id="ulList">
+      <ul class="footerIcons">
+        <li class="iconList"><img src="images/footer-logo.png"></li></ul>
+        <ul class="secondul"><li  class="iconList"><a href="https://www.facebook.com/tacobellindia/" target="_blank" class="white"><i class="fa-brands fa-facebook"></i></a></li>
+        <li  class="iconList"><a href="https://www.instagram.com/tacobellindia/" target="_blank" class="white"><i class="fa-brands fa-instagram" id="ins"></i></a></li>
+        <li  class="iconList"><a href="https://twitter.com/tacobellindia" target="_blank" class="white"><i class="fa-brands fa-twitter" ></i></a></li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

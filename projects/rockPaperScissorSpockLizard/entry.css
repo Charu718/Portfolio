@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #85B094;
+}
+.common{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid ;
+  margin-bottom:20px;
+}
+#outputShow,#compShow{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom:20px;
+}
+.rock{
+  background-image: url("https://goodday451999.github.io/Rock-Paper-Scissors-Neo/images/stone.png");
+  background-size: 100% 100%;
+}
+.paper{
+  background-image: url("https://goodday451999.github.io/Rock-Paper-Scissors-Neo/images/paper.png");
+  background-size: 100% 100%;
+}
+.scissors{
+  background-image: url("https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-5.jpg");
+  background-size: 100% 100%;
+}
+.spock{
+  background-image: url("https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-6.jpg");
+  background-size: 100% 100%;
+}
+.lizard{
+  background-image: url("images/im.png");
+  background-size: 100% 100%;
+}
+p{
+  height:100px;
+  width:100px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: #BED1BD;
+  color:#326D6B;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+.total{
+      margin-top: 50px;
+    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+div,#res{
+  margin: auto;
+}
+#res{
+  width:500px;
+}
+.show2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: 100% 100%;
+}
+#styleCommon{
+  display: flex;
+  margin-top: -50px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+h1{
+  color:#326D6B;
+font-family: 'Josefin Sans', sans-serif;
+}
+#compShow,#outputShow{
+  height:200px;
+  width:200px;
+  background-size: 100% 100%;
+}
+#result,#scoreComp,#score{
+  font-size: 1.3em;
+  font-family: 'Source Code Pro', monospace;
+}

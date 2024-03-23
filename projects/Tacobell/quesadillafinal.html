@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Oswald:wght@300&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+  <style>
+    .idpic{
+      height:80%;
+      width:90%;
+      margin-left:10%;
+      background-image:url("tacos/tacosImg/quesadillafinal.jpg");
+    background-size:100% 100%;
+    }
+    .veg{
+      color: green;
+    }
+    .grey {
+      color: #6f6f6f;
+    }
+        .ordern {
+      height: 15%;
+      width: 10%;
+      border-radius: 30px;
+      background-color: white;
+      color: #7124B4;
+      border: 1px solid#7124b4;
+    }
+    .ordern:hover {
+      background-color: #7124B4;
+      color: white;
+    }
+    .details{
+      height: 50%;
+      width: 80%;
+      margin-left:20%;
+      font-size: 2em;
+      margin-top:5%;
+      line-height: 60px;
+    }
+/*mobile view  */
+@media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+  .ordern{
+    width: 32%;
+  }
+  .details{
+    line-height: 30px;
+  }
+  .idpic{
+    height:50%;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+          
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section class="idpic">
+    
+    </section>
+    <section class="details">
+    <p>MELTED CHEESE QUESADILLA</p>
+    <p class="veg">VEG</p>
+    <p class="grey">The chicken quesadilla is a purist's meal; and we say purist in the most complimenting way possible. Its a simple flour soft tortilla served with grilled chicken, a hefty portion of melted cheese with creamy jalapeno sauce
+</p>
+    <a href="order now.html"><button class="ordern">ORDER NOW</button></a>
+      </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    #more{
+      height: 100%;
+      width: 90%;
+      margin-left: 10%;
+      background-image: url("moreimg/morebanner.png");
+      background-size: 100% 100%;
+      display: flex;
+    }
+    .moreMenu{
+       height: 100%;
+      width: 25%;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      color: white;
+      font-size:2em;
+      font-weight:bolder;
+    }
+    .moreMenu:hover{
+      background-color: rgba(127, 0, 255, .5);
+      transition-duration:.5s;
+    }
+    /*mobile view  */
+    @media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+      .moreMenu {
+    height: 25%;
+    width: 100%;
+    }
+      #more{
+        flex-direction: column;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+          
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect"><div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section id="more">
+      <div class="moreMenu"><a href="gallery.html" class="white">GALLERY</a></div>
+      <div class="moreMenu"><a href="index.html" class="white">NEWS</a></div>
+      <div class="moreMenu"><a href="whatsNew.html" class="white">WHAT'S NEW</a></div>
+      <div class="moreMenu"><a href="workwithus.html" class="white">WORK WITH US</a></div>
+    </section>
+  </div>
+  </body>
+</html>

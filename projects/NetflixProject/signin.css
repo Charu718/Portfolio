@@ -1,0 +1,233 @@
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    height:100%;
+    width:100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'netflixFont';
+}
+@font-face {
+    font-family: 'netflixFont';
+    src: url("netflix-sans/NetflixSans-Regular.otf");
+}
+#steps{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+#heading{
+    height:15%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(220, 213, 213);
+}
+#back{
+    height:100%;
+    width:100%;
+}
+.logo{
+    height:100%;
+    width:20%;
+} 
+#regProcess{
+    margin-top: 10%;;
+    margin-bottom: 2%;
+}
+.starting{
+    margin-top: 10%;;
+    margin-bottom: 2%;
+}
+.fa-circle-check{
+    font-size: 2.3em;
+    color:#E50914;
+}
+.input{
+    height:8%;
+    width:30%;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    padding-left: 2%;
+    font-size: 1.6em;
+    border: 1px solid rgb(203, 196, 196);
+    margin-top: 10px;
+}
+.spl:hover{
+    background-color: #ba060f;
+    transition: .2s;
+}
+.spl{
+    color: white;
+    font-size: 1.6em;
+    background-color: #E50914;
+    margin-top: 1%;
+}
+p{
+    width: 19%;
+    font-size: 1.2em;
+    text-align: center;
+}
+#settingAcnt{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1%;
+    width: 70%;
+}
+#box{
+    height:85%;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+#box2,#box3,#box4,#box5{
+    height:85%;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+#box4{
+    margin-left: 55%;
+    align-items:normal;
+    text-align: left;
+    height:100%;
+}
+ul{
+    list-style: none;
+    font-size: 1.1em;
+    margin-top: -40px;
+    line-height: 9px;
+}
+.fa-check{
+    color: #E50914;
+}
+li{
+  line-height: normal;  
+}
+#topic{
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 28%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-align: left;
+}
+.fa-check{
+    color:#E50914;
+}
+#use{
+    line-height: 5px;
+}
+#subscriptionCategory{
+    height:15%;
+    width:50%;
+    display: flex;
+    justify-content: right;
+    gap:1%;
+}
+.box{
+    height:100%;
+    width:12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: #EF6B72;
+}
+table,tr{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td{
+    width: 125px;
+    text-align: center;
+    color:rgb(87, 83, 83);
+}
+table{
+    width:50%;
+    color: rgb(117, 110, 110);
+}
+tr{
+    height:65px;
+}
+.param{
+    width: 490px;
+    text-align: left;
+    padding-left: 1%;
+}
+.up{
+    border-top: none;
+}
+.down{
+    border-bottom: none;
+}
+.fa-solid{
+    font-size: 2em;
+    color: rgb(165, 159, 159);
+}
+.last{
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+.fa-lock{
+    color:#E50914
+}
+.card{
+    text-align: left;
+}
+.fa-angle-right{
+    font-size: 20px;
+    margin-left: 335px;
+}
+.arrow{
+    margin-left: 248px;
+}
+.methodOfPayment{
+    text-decoration: none;
+    color: black;
+}
+.white{
+    color: white;
+}
+
+
+
+@media (min-width:400px) and (max-width:700px) and (max-resolution: 300dpi){
+    p{
+        width:36%;
+    }
+    .input{
+        font-size: 1em;
+    }
+    td{
+        font-size: 9px;
+    }
+    #subscriptionCategory{
+        height:6%;
+    }
+    .logo{
+        width:30%;
+    }
+    .fa-angle-right{
+        margin-left: 0;
+    }
+    /* .arrow{
+        margin-left: 55px;
+    } */
+}

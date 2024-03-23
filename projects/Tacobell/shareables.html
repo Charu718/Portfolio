@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #add {
+      height: 80%;
+      width: 90%;
+      margin-left: 10%;
+      background-image: url("shareables/shareablebanner.jpg");
+      background-size: 100% 100%;
+    }
+
+    .tacoMenu {
+      height: 50%;
+      width: 22%;
+      text-align: center;
+      border-radius: 5%;
+    }
+
+    .tacoList {
+      height: 100%;
+      width: 90%;
+      margin-left: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3%;
+      justify-content: center;
+    }
+
+    .tacoMenu:hover {
+      transform: scale(1.01);
+      box-shadow: 0px 0px 15px 4px grey;
+      transition: 1s;
+    }
+
+    .sizeTaco {
+      height: 70%;
+      width: 100%;
+      margin-bottom: 5%;
+      border-radius: 5%;
+    }
+
+    .veg {
+      color: green;
+    }
+
+    .nonveg {
+      color: red;
+    }
+    .remove{
+      color: black;
+      text-decoration: none;
+    }
+/*mobile view  */
+@media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+  .tacoMenu{
+    width:48%;
+    line-height: 20px;
+  }
+  .tacoList{
+    margin-bottom: 240%;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section id="add">
+    </section>
+    <p style="text-align: center; font-size:3em; font-weight:bolder;">SHAREABLES</p>
+    <section class="tacoList">
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2burrito_supreme-2cruncy_taco_bean-1seasoned_fries_n-veg.jpg"
+          class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2CRUNCY TACO + 2SRIRACHA BURRITO + 1SEASONED FRIES</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2burrito_supreme-2cruncy_taco_bean-1seasoned_fries_veg.jpg"
+          class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2CRUNCY TACO + 2SRIRACHA BURRITO + 1SEASONED FRIES</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2chalupa-1quesadilla-1seasoned_fries_n-veg.jpg" class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2CHALUPA + 1MELTED CHEESE QUESADILLA + 1SEASONED FRIES</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2chalupa-1quesadilla-1seasoned_fries_veg.jpg" class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2CHALUPA + 1MELTED CHEESE QUESADILLA + 1SEASONED FRIES</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2rice_bowl-2cruncy_taco_bean-1seasoned_fries_n-veg.jpg"
+          class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2CRUNCY TACO + 2BURRITO SUPREME + 1SEASONED FRIES</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2rice_bowl-2cruncy_taco_bean-1seasoned_fries_veg.jpg" class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2CRUNCY TACO + 2BURRITO SUPREME + 1SEASONED FRIES</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2sriracha_burrito-2cruncy_taco_bean-1seasoned_fries_n-veg.jpg"
+          class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2ULTIMATE RICE BOWL + 2CRUNCHY TACO + 1SEASONED FRIES</p></a>
+        <p class="veg">VEG</p>
+      </div>
+      <div class="tacoMenu">
+        <img src="shareables/shareables/367x380_2sriracha_burrito-2cruncy_taco_bean-1seasoned_fries_veg.jpg"
+          class="sizeTaco">
+        <a href="shareablesfinal.html" class="remove"><p>2ULTIMATE RICE BOWL + 2CRUNCHY TACO + 1SEASONED FRIES</p></a>
+        <p class="nonveg">NON VEG</p>
+      </div>
+
+    </section>
+    <footer>
+      <ul class="footermenuList">
+        <li class="footerMenu"><a href="index.html" class="white">Our food</a></li>
+        <li class="footerMenu"><a href="findUs.html" class="white">Find us</a></li>
+        <li class="footerMenu"><a href="workwithus.html" class="white">Work with us</a></li>
+        <li class="footerMenu"><a href="aboutUs.html" class="white">About us</a></li>
+        <li class="footerMenu"><a href="whatsNew.html" class="white">What's new</a></li>
+      </ul>
+      <div id="ulList">
+      <ul class="footerIcons">
+        <li class="iconList"><img src="images/footer-logo.png"></li></ul>
+        <ul class="secondul"><li  class="iconList"><a href="https://www.facebook.com/tacobellindia/" target="_blank" class="white"><i class="fa-brands fa-facebook"></i></a></li>
+        <li  class="iconList"><a href="https://www.instagram.com/tacobellindia/" target="_blank" class="white"><i class="fa-brands fa-instagram" id="ins"></i></a></li>
+        <li  class="iconList"><a href="https://twitter.com/tacobellindia" target="_blank" class="white"><i class="fa-brands fa-twitter" ></i></a></li>
+      </ul>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

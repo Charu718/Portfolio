@@ -1,0 +1,346 @@
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    height:100%;
+    width:100%;
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "netflixFont";
+}
+@font-face {
+    font-family: 'netflixFont';
+    src: url("netflix-sans/NetflixSans-Regular.otf");
+}
+.showPrev{
+    height:100%;
+    width:100%;
+    position: relative;
+    background-size: 100% 100%;
+}
+#testPreview{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 50%);
+    position: absolute;
+    top:0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 2%;
+}
+#cont{
+    font-size: 2em;
+    width: 41%;
+    margin-top: 3%;
+    color: white;
+    margin-bottom: 2%;
+  }
+  h1{
+    font-size: 6em;
+    color: white;
+  }
+  #watch{
+    width: 13%;
+    margin-bottom: 8%;
+    height: 7%;
+    font-size: 2em;
+  }
+  #watch:hover{
+    transform: translateY(-5px);
+  }
+  .fa-arrow-left{
+    font-size: 3em;
+    margin-bottom: 19%;
+  }
+  #related{
+    height:30%;
+    width:100%;
+    background-color: black;
+  }
+  #variousMovie {
+    height: 100%;
+    width: 100%;
+    margin-top: -5%;
+    position: absolute;
+  }
+  
+  .carouselDiv {
+    height: 100%;
+    width: 100%;
+    gap: 3px;
+    margin-bottom: 10%;
+    z-index: -1;
+    /* overflow-x: scroll; */
+    flex-wrap: wrap;
+    white-space: nowrap;
+    font-size: 1.5em;
+    overflow-y: hidden;
+    padding-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .rwItm {
+    height: 23%;
+    width: 20%;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  
+  /* .rwItm:hover{
+      height:100%;
+      width:21%;
+      transition:2s;
+  } */
+  .carouselDiv::-webkit-scrollbar {
+    display: none;
+  }
+  #preview {
+    height: 76%;
+    position: absolute;
+    width: 50%;
+    margin-top: -42%;
+    margin-left: 26%;
+    background-color: #181818;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+  
+  }
+  
+  #movieTrailer {
+    height: 70%;
+    width: 100%;
+  }
+  
+  #contentDesc {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1%;
+  }
+  
+  p {
+    width: 90%;
+  }
+  
+  .contentBody {
+    margin-bottom: 2%;
+  }
+  
+  .fa-circle-plus,
+  .fa-thumbs-up {
+    margin-top: -10%;
+    font-size: 3em;
+    margin-left: 4%;
+  
+  }
+  
+  /* .fa-circle-xmark{
+    position: absolute;
+    text-align: right;
+    margin-left: 93%;
+    font-size: 3em;
+    margin-top: 1%;
+    display: block;
+  } */
+  #backCircle {
+    height: 60px;
+    width: 63px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    margin-left: 97%;
+    font-size: 3em;
+    margin-top: -3%;
+  }
+  
+  #profile {
+    height: 76%;
+    position: fixed;
+    width: 50%;
+    background-color: white;
+    margin: 5% 0 0 -3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #select {
+    height: 76%;
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    flex-wrap: wrap;
+  }
+  
+  .fa-bell,
+  .fa-magnifying-glass {
+    font-size: 2em;
+  }
+  
+  .img {
+    height: 28%;
+    width: 20%;
+    border-radius: 5px;
+  }
+  
+  #headLine {
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  #blue {
+    background-image: url("profile/blue.png");
+    background-size: 100% 100%;
+  }
+  
+  #glass {
+    background-image: url("profile/glass.png");
+    background-size: 100% 100%;
+  }
+  
+  #pink {
+    background-image: url("profile/pink.png");
+    background-size: 100% 100%;
+  }
+  
+  #red {
+    background-image: url("profile/red.png");
+    background-size: 100% 100%;
+  }
+  
+  #threeEye {
+    background-image: url("profile/threeEye.png");
+    background-size: 100% 100%;
+  }
+  
+  #violet {
+    background-image: url("profile/violet.png");
+    background-size: 100% 100%;
+  }
+  
+  #yellow {
+    background-image: url("profile/yellow.png");
+    background-size: 100% 100%;
+  }
+  
+  #mainPro {
+    height: 32px;
+    width: 32px;
+  }
+  
+  #logOut {
+    color: rgb(168, 7, 7);
+  }
+  
+  #logOut:hover {
+    color: rgb(221, 93, 93);
+  }
+  
+  .align {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back,
+  .hide {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+  }
+  
+  
+  /* media query */
+  
+  @media (min-width:400px) and (max-width:700px) and (max-resolution: 300dpi) {
+    .overlay {
+      overflow: hidden;
+    }
+  
+    #head {
+      display: block;
+      width: 192%;
+    }
+  
+    .hide {
+      display: none;
+    }
+  
+    #runningVideo {
+      display: none;
+    }
+  
+    .rwItm {
+      width: 48%;
+    }
+  
+    .carouselDiv {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  
+    #preview {
+      margin-top: 21%;
+      margin-left: 17%;
+      width: 68%;
+      height: 60%;
+    }
+  
+    #backCircle {
+      height: 42px;
+      width: 41px;
+      margin-left: 90%;
+      font-size: 2em;
+      margin-top: -6%;
+    }
+  
+    .fa-circle-plus,
+    .fa-thumbs-up {
+      font-size: 2em;
+      margin-top: 0%;
+    }
+  
+    #movieTrailer {
+      height: 48%;
+    }
+  
+    .contentBody {
+      font-size: 0.8em;
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    #descrip {
+      display: block;
+    }
+  
+    #variousMovie {
+      padding-top: 18%;
+    }
+  
+    .align {
+      margin-top: -8%;
+    }
+  
+  }
+  

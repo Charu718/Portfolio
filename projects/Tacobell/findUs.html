@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tacobell</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Montserrat&family=Mr+Dafoe&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300;400&family=Source+Code+Pro:wght@200&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #banner {
+      height: 50%;
+      width: 90%;
+      margin-left: 10%;
+      background-image: url("find/tacobell-FindUs-Banner.jpg");
+      background-size: 100% 100%;
+      padding-top: 8%;
+      line-height: 60px;
+    }
+
+    .bannerinner {
+      height: 40%;
+      width: 100%;
+      /* margin-top: 8%; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #find {
+      color: white;
+      font-size: 2em;
+      font-weight: bolder;
+    }
+
+    #searchmenu {
+      height: 25%;
+      width: 70%;
+      border-radius: 30px;
+      /* background-color:white; */
+    }
+
+    #locality,
+    #city,
+    #state,
+    #search {
+      height: 66px;
+      width: 24%;
+      border: none;
+      padding-left: 3%;
+    }
+
+    #state {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+
+    #search {
+      border-radius: 30px;
+      background-color: #7124B4;
+      padding-left: 4%;
+    }
+
+    #click {
+      color: white;
+      margin-top: 6%;
+    }
+
+    #overflowBox {
+      height: 100%;
+      width: 90%;
+      margin-left: 10%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10%;
+    }
+
+    #locationBox {
+      height: 100%;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow: scroll;
+      padding-bottom: 5%;
+    }
+
+    .loc {
+      height: 80%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 1%;
+      opacity:0.7;
+    }
+    .loc:hover{
+      opacity:1;
+      transition: 1s;
+    }
+    .locImg {
+      height: 70%;
+      width: 100%;
+    }
+
+    h4 {
+      margin: 3% 0%;
+      text-align: center;
+    }
+
+    .small {
+      height: 30%;
+      width: 35%;
+      background-color: white;
+      margin: 5% 0%;
+      border: 1px solid #7124B4;
+      border-radius: 4px;
+      color: #7124B4;
+    }
+
+    .space {
+      margin-left: 29%;
+    }
+
+    .bigB {
+      height: 30%;
+      width: 100%;
+      background-color: #7124B4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .small:hover {
+      background-color: #7124B4;
+      color: white;
+    }
+
+    .bigB:hover {
+      background-color: white;
+      color: #7124B4;
+      border: 1px solid #7124B4;
+    }
+
+    .clickButton {
+      height: 35%;
+      width: 100%;
+    }
+
+    #locationBox::-webkit-scrollbar {
+      display: none;
+    }
+
+    .address {
+      width: 100%;
+      text-align: center;
+    }
+    #line{
+      text-decoration: none;
+    }
+    #click:hover{
+      color:grey;
+    }
+    /*mobile view  */
+    @media (min-width:300px) and (max-width:900px) and (max-resolution: 300dpi){
+      .small {
+        width: 30%;
+      }
+
+      html {
+        padding-right: 10%;
+      }
+
+      #locality,
+      #city,
+      #state,
+      #search {
+        height: 43%;
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 9%;
+      }
+
+      #banner {
+        height: 90%;
+      }
+      #click{
+          margin-top: 80%;
+    line-height: normal;
+    text-align: center;
+      }
+      #find{
+        text-align: center;
+      }
+      #query{
+        display: none;
+      }
+      #search{
+        width: 50%;
+    margin-left: 27%;
+    border: 2px solid white;
+    height: 40px;
+      }
+      .loc{
+        width:100%;
+      }
+      .space{
+        margin-left: 38%;
+      }
+      #overflowBox{
+        margin-bottom: 10%;
+      }
+    }
+  </style>
+
+<body>
+  <div id="wholeContainer">
+    <header class="head">
+      <center><img src="images/footer-logo.png" class="logo"><br></center>
+      <ul id="list1">
+        <li class="menu">
+          <div class="effect"><a href="order now.html" id="top">ORDER NOW</a></div>
+
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="index.html" id="top">OUR FOOD</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="findUs.html" id="top">FIND US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="nutrition.html" id="top">NUTRITION</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="aboutUs.html" id="top">ABOUT US</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="whatsNew.html" id="top">WHAT'S NEW</a></div>
+        </li>
+        <li class="menu border">
+          <div class="effect">
+            <div class="effect"><a href="more.html" id="top">MORE </a></div>
+        </li>
+      </ul>
+
+    </header>
+    <section id="banner">
+      <div class="bannerinner">
+        <img src="notexticon.png" id="query">
+        <p id="find">FIND TACO BELL NEAR YOU</p>
+        <div id="searchmenu">
+          <form>
+            <select name="state" id="state">
+              <option value="tamil_nadu">Tamil nadu</option>
+              <option value="kerala">Kerala</option>
+              <option value="Andhra_Pradhesh">Andhra Pradesh</option>
+              <option value="Karnataka">Karnataka</option>
+            </select>
+            <select name="city" id="city">
+              <option value="City">City</option>
+            </select>
+            <select name="Locality" id="locality">
+              <option value="Locality">Locality</option>
+            </select>
+            <input type="search" placeholder="Search" id="search">
+          </form>
+        </div>
+        <a href="safety.html" id="line"><p id="click">CLICK HERE TO CHECK OUR SAFETY AND HYGEINE STANDARDS</p></a>
+      </div>
+    </section>
+    <h1 style="margin-left:15%; margin-top:2%; margin-bottom:2%;">RESTAURANTS OPEN FOR DINE-IN, DELIVERY AND TAKEAWAY
+    </h1>
+    <section id="overflowBox">
+      <div id="locationBox">
+        <div class="loc">
+          <img src="images/findimg/AGL09179_767.jpg" class="locImg">
+          <h4>Ambience Mall, Gurugram</h4>
+          <p class="address">Address: T-304-A, 3rd Floor, Ambience Mall, Gurugram, Haryana</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/Ardee_TB_4.jpg" class="locImg">
+          <h4>Ardee Mall</h4>
+          <p class="address">Address: Shop No. A-18, 3rd Floor, Block-B, Ardee Mall, Ardee City, Sector 52, Gurugram,
+            Haryana</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/Cyberhub_767.jpg" class="locImg">
+          <h4>Cyber Hub</h4>
+          <p class="address">Address: Building – 8, Tower – C, 8C/GF/5, DLF Cyber City, Gurugram, Haryana</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/DSC01598_767.jpg" class="locImg">
+          <h4>Sector-35 C</h4>
+          <p class="address">Address: SCO No. 453 & 454, Sector 35C, Chandigarh, Punjab</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/indiranagar.jpg" class="locImg">
+          <h4>Indira Nagar</h4>
+          <p class="address">Address: UNIT NO. 840/1, 100 Feet Road, Indira Nagar, Binnamangala, 1st Stage, B.B.M.P
+            East, Bengaluru, Karnataka</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/Kamala-Nagar_Dehli_767.jpg" class="locImg">
+          <h4>Kamla Nagar, Delhi</h4>
+          <p class="address">Address: Shop No. UA27A, Jawahar Nagar, Malka Ganj Road, New Delhi, Delhi</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/MOI_Web.png" class="locImg">
+          <h4>Mall Of India</h4>
+          <p class="address">Address: Food Court Shop no – FC. 08, Fourth Floor, Mall of India, Noida, Plot no. M-03,
+            Sector – 18, Noida, Uttar Pradesh</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/Phoenix-Marketcity_-Bangaluru.jpg" class="locImg">
+          <h4>Phoenix Market City Mall</h4>
+          <p class="address">Address: Door No. 40 & 41, 1st Floor, Unit No. F-25 & 26, Phoenix Market City Mall,
+            Mahadeva Pura, K R Puram, B.B.M.P East, Bengaluru, Karnataka</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/Taco-Bell-Logix1175_767.jpg" class="locImg">
+          <h4>Logix Mall</h4>
+          <p class="address">Address: Logix City Centre, 3rd Floor, Plot No. BW-58 Gof Marg, Sec 32, Near Noida City
+            Centre Metro Station, Noida, Uttar Pradesh</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/Tacobell_VR_Mall_-Mohali_3_767.jpg" class="locImg">
+          <h4>VR Mohali</h4>
+          <p class="address">Address: Store No. S-29/30/31, 2nd Floor, VR Mall, NH-21, Chandigarh Kharar Road, Sector
+            118, Sahibzada Ajit Singh Nagar, Mohali, Punjab</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/TB06_767.jpg" class="locImg">
+          <h4>Epicuria Nehru Place</h4>
+          <p class="address">Address: Nehru Place Metro, Shop no 6A, Upper Ground Floor, New Delhi, Delhi</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+
+
+        <div class="loc">
+          <img src="images/findimg/vasantkunj_1_2.jpg" class="locImg">
+          <h4>Ambience Mall, Vasant Kunj</h4>
+          <p class="address">Address: Space No. 8 (T-316 A) on Third Floor, at Ambience Mall, Vasant Kunj, New Delhi,
+            Delhi</p>
+          <div class="clickButton"><button class="small">Call now</button>
+            <button class="small space">Get location</button>
+            <button class="bigB">Reastaurant details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="footermenuList">
+        <li class="footerMenu"><a href="index.html" class="white">Our food</a></li>
+        <li class="footerMenu"><a href="findUs.html" class="white">Find us</a></li>
+        <li class="footerMenu"><a href="workwithus.html" class="white">Work with us</a></li>
+        <li class="footerMenu"><a href="aboutUs.html" class="white">About us</a></li>
+        <li class="footerMenu"><a href="whatsNew.html" class="white">What's new</a></li>
+      </ul>
+      <div id="ulList">
+      <ul class="footerIcons">
+        <li class="iconList"><img src="images/footer-logo.png"></li></ul>
+        <ul class="secondul"><li  class="iconList"><a href="https://www.facebook.com/tacobellindia/" target="_blank" class="white"><i class="fa-brands fa-facebook"></i></a></li>
+        <li  class="iconList"><a href="https://www.instagram.com/tacobellindia/" target="_blank" class="white"><i class="fa-brands fa-instagram" id="ins"></i></a></li>
+        <li  class="iconList"><a href="https://twitter.com/tacobellindia" target="_blank" class="white"><i class="fa-brands fa-twitter" ></i></a></li>
+      </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

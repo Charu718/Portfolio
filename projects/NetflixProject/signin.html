@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="signin.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Fjalla+One&family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans&family=Montserrat&family=Mr+Dafoe&family=Open+Sans&family=Oswald:wght@300&family=Permanent+Marker&family=Poppins:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Code+Pro&family=Source+Sans+3:wght@200;300;400&family=Ubuntu:wght@500&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1ec39dad4d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section id="steps">
+            
+            <header id="heading"><a href="index.html" id="back"><img src="Images/Logos.png" class="logo"></a></header>
+            <div id="box">
+            <img src="Images/Devices.png" id="regProcess">
+            <p>STEP 1 OF 3</p>
+            <p id="settingAcnt">Finish setting up your account</p>
+            <p>Netflix is personalised for you</p>
+            <p> Create a password to watch on any device at any time</p>
+            <button class="input spl" onclick="changePage()">Next</button>
+        </div>
+
+
+        <div id="box2">
+            <p class="starting">STEP 1 OF 3</p>
+            <p id="settingAcnt">Create a password to start your membership</p>
+            <p>Just a few more steps and you're done!</p>
+            <p>We hate paperwork, too.</p>
+            <input type="text" class="input" id="default" placeholder="Username">
+            <input type="password" id="pass"  class='input' placeholder="Create a new password">
+            <button class="input spl" onclick="changePageTwo()">Next</button>
+        </div>
+
+
+        <div id="box3">
+            <i class="fa-regular fa-circle-check starting"></i>
+            <p>STEP 2 OF 3</p>
+            <p id="settingAcnt">Choose your plan.</p>
+            <pre>
+            <ul>
+                <li><i class="fa-solid fa-check"></i>  No commitments, cancel<br>      anytime.</li>
+                <li><i class="fa-solid fa-check"></i>  Everything on Netflix for one<br>      low price.</li>
+                <li><i class="fa-solid fa-check"></i>  No ads and no extra fees. Ever.</li>
+            </ul>
+        </pre>
+            <button class="input spl" onclick="changePageThree()">Next</button>
+        </div>
+
+
+        <div id="box4">
+            <p>STEP 2 OF 3</p>
+            <p id="topic">Choose the plan that’s right for you</p>
+            <pre>
+            <ul id="use">
+                <li><i class="fa-solid fa-check"></i>  Watch all you want. Ad-free.</li>
+                <li><i class="fa-solid fa-check"></i>  Recommendations just for you.</li>
+                <li><i class="fa-solid fa-check"></i>  Change or cancel your plan anytime.</li>
+            </ul>
+        </pre>
+        <div id="subscriptionCategory">
+            <div class="box mobile" onclick="mobileOption()">Mobile</div>
+            <div class="box basic" onclick="basicOption()">Basic</div>
+            <div class="box standard" onclick="standardOption()">Standard</div>
+            <div class="box premium" onclick="premiumOption()">Premium</div>
+        </div>
+        <table>
+            <tr>
+                <td class="param up">Monthly price</td>
+                <td class="mobile">₹ 149</td>
+                <td class="basic">₹ 199</td>
+                <td class="standard">₹ 499</td>
+                <td class="premium">₹ 649</td>
+            </tr>
+            <tr>
+                <td class="param">Video quality</td>
+                <td class="mobile">Good</td>
+                <td class="basic">Good</td>
+                <td class="standard">Better</td>
+                <td class="premium">Best</td>
+            </tr>
+            <tr>
+                <td class="param">Resolution</td>
+                <td class="mobile">480p</td>
+                <td class="basic">720p</td>
+                <td class="standard">1080p</td>
+                <td class="premium">4K+HDR</td>
+            </tr>
+            <tr>
+                <td class="param down">Devices you can use to watch</td>
+                <td><i class="fa-solid fa-mobile mobile"></i><br>Phone<br><br><i class="fa-solid fa-tablet-button mobile"></i><br>Tablet</td>
+                <td><i class="fa-solid fa-mobile basic"></i><br>Phone<br><br><i class="fa-solid fa-tablet-button basic"></i><br>Tablet<br><br><i class="fa-solid fa-desktop basic"></i><br>Computer<br><br><i class="fa-solid fa-tv basic"></i><br>TV</td>
+                <td><i class="fa-solid fa-mobile standard"></i><br>Phone<br><br><i class="fa-solid fa-tablet-button standard"></i><br>Tablet<br><br><i class="fa-solid fa-desktop standard"></i><br>Computer<br><br><i class="fa-solid fa-tv standard"></i><br>TV</td>
+                <td><i class="fa-solid fa-mobile premium"></i><br>Phone<br><br><i class="fa-solid fa-tablet-button premium"></i><br>Tablet<br><br><i class="fa-solid fa-desktop premium"></i><br>Computer<br><br><i class="fa-solid fa-tv premium"></i><br>TV</td>
+            </tr>
+        </table>
+        <button class="input spl last" onclick="changePageFour()">Next</button>
+        </div>
+
+
+        <div id="box5">
+            <i class="fa-solid fa-lock starting"></i>
+            <p>STEP 3 OF 3</p>
+            <p id="settingAcnt">Choose how to pay</p>
+            <p>Your payment is encrypted and you can change your</p>
+            <p>payment method at any time</p>
+            <p>Secure for peace of mind</p>
+            <p>ancel easily online</p>
+            <button class="input card" id="default" ><a href="pay.html" class="methodOfPayment">Scan QR code<i class="fa-solid fa-angle-right arrow"></i></button></a>
+            <button class='input card'><a href="pay.html" class="methodOfPayment">UPI AutoPay <i class="fa-solid fa-angle-right"></i></button></a>
+            
+        </div>
+            </section>
+            <script src="sequenceSigninProcess.js"></script>   
+            </body>
+            </html>
